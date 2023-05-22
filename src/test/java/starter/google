@@ -17,7 +17,7 @@ class WhenSearchingByKeyword {
 
     @Test
     void theKeywordShouldAppearInTheResultsSidebar() {
-        navigate.toTheDuckDuckGoSearchPage();
+        navigate.toGoogleSearchPage();
         search.byKeyword("Adrian Belir");
         assertThat(searchResultSidebar.heading()).isEqualTo("Cucumber");
     }
