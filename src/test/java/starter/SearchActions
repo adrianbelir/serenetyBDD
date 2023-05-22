@@ -2,7 +2,7 @@ import net.serenitybdd.core.steps.UIInteractions;
 
 public class SearchActions extends UIInteractions {
     public void byKeyword(String keyword) {
-      $("#search_form_input_homepage").sendKeys(keyword);
-      $(".search__button").click();      
+      $x("/html/body/div[1]/div[2]/div[2]/div[2]/form/div[1]/div[1]/div[1]/div[1]/div/input").sendKeys(keyword);
+      $x("/html/body/div[1]/div[2]/div[2]/div[2]/form/div[1]/div[1]/div[1]/div[1]/div/input").sendKeys(Keys.Return);    
     }
 }
